@@ -24,22 +24,30 @@ body {
     position: relative;
 }
 
-.rick {
-    position: absolute;
-    right: 450px;
-    top: 0;
+.fundoInvisivel {
+    height: 100vh;
     width: 100%;
-    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rick {
+    border-radius: 500px;
+    width: 50%;
+    opacity: 0.5;
     visibility: hidden;
     z-index: -1;
 }
 
 .rick2 {
-    position: absolute;
-    left: 450px;
-    top: 0;
-    width: 100%;
-    opacity: 0.25;
+    border-radius: 500px;
+    width: 50%;
+    opacity: 0.5;
     visibility: hidden;
     z-index: -1;
 }
@@ -48,6 +56,7 @@ h1 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: white;
+    z-index: 1;
 }
 
 #cliqueAqui {
@@ -218,14 +227,26 @@ h1 {
         font-size: 0.5rem;
     }
 
-    .rick {
-        top: 550px;
-        left: 0;
+    .fundoInvisivel {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
     }
 
+    .rick {
+        border-radius: 500px;
+        width: 100%;
+        opacity: 0.5;
+        visibility: hidden;
+        z-index: -1;
+    }
+    
     .rick2 {
-        bottom: 550px;
-        left: 0;
+        border-radius: 500px;
+        width: 100%;
+        opacity: 0.5;
+        visibility: hidden;
+        z-index: -1;
     }
 
 }
