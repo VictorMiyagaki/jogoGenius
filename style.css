@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+
+.fundoRosa {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(223, 8, 194);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+    position: relative;
+}
+
+.rick {
+    position: absolute;
+    right: 450px;
+    top: 0;
+    width: 100%;
+    opacity: 0.25;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.rick2 {
+    position: absolute;
+    left: 450px;
+    top: 0;
+    width: 100%;
+    opacity: 0.25;
+    visibility: hidden;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#cliqueAqui {
+    animation: piscando 1s infinite linear alternate;
+}
+
+@keyframes piscando {
+    from {
+        color: white;
+    }
+
+    to {
+        color: black;
+    }
+}
+
+@keyframes giro {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes baladinha {
+    0% {
+        background-color: blue;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: purple;
+    }
+}
+
+.circuloPreto {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border: 10px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.botao {
+    width: 230px;
+    height: 230px;
+    margin: 5px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.botaoGirar,
+.botaoBalada,
+.botaoMusica {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(211, 16, 16);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 100%;
+    border: 2px solid white;
+    transition: 1s;
+    font-size: 1 rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoBalada {
+    top: 60px;
+}
+
+.botaoMusica {
+    top: 105px;
+}
+
+.baladinha {
+    animation: baladinha 500ms infinite linear;
+}
+
+.verde {
+    background-color: green;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.circuloPretoMenor {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+.botaoAnimado {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.esconder {
+    visibility: hidden;
+}
+
+.animacaoGiro {
+    animation: giro 5s infinite linear;
+}
+
+@media (max-width: 1000px) {
+    .circuloPreto {
+        width: 300px;
+        height: 300px;
+        border: 4px solid black;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    .botao {
+        width: 142px;
+        height: 142px;
+        font-size: medium;
+        border-radius: 20px;
+        margin: 0;
+        margin: 2px;
+    }
+
+    .circuloPretoMenor {
+        font-size: 0.5rem;
+    }
+
+    .rick {
+        top: 550px;
+        left: 0;
+    }
+
+    .rick2 {
+        bottom: 550px;
+        left: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fundoAmarelo {
+    width: 48%;
+    height: 50vh;
+    background-color: yellow;
+    padding: 2%;
+    margin: 1%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.fundoVerde {
+    width: 48%;
+    margin: 1%;
+    height: 50vh;
+    background-color: rgb(0, 255, 234);
+    display: flex;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.fundoVermelho {
+    width: 21%;
+    margin: 2%;
+    padding: 1%;
+    height: 25vh;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.fundoLaranja {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 10px;
+}
+
+.fundoAzul {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(98, 107, 230);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px;
+}
+
+.fundoRoxo {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(84, 16, 129);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.fundoRoxo:nth-last-child(1) {
+    border-bottom-left-radius: 25px;
+}
+
+@media (max-width: 1000px) {
+    .fundoAmarelo {
+        width: 100%;
+    }
+
+    .fundoVerde {
+        width: 100%;
+    }
+
+    .fundoLaranja {
+        flex-direction: column;
+    }
+}
