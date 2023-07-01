@@ -194,6 +194,7 @@ document.querySelector('.botaoBalada').addEventListener('click', function () {
 // BOTÃO QUE REPRODUZ UMA MÚSICA
 
 const musica = new Audio('sons/give.mp3');
+musica.loop = true;
 let musicaTocando = false;
 
 document.querySelector('.botaoMusica').addEventListener('click', function () {
