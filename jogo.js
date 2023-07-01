@@ -181,14 +181,14 @@ function animacao(elemento, classe, tempo) {
 
 document.querySelector('.botaoGirar').addEventListener('click', function () {
     document.querySelector('.circuloPreto').classList.toggle('animacaoGiro');
-    document.querySelector('.botaoGirar').classList.toggle('verde');
+    document.querySelector('.botaoGirar').classList.toggle('botaoExtraVerde');
 });
 
 // BOTÃO QUE FAZ O FUNDO VIRAR UMA BALADA
 
 document.querySelector('.botaoBalada').addEventListener('click', function () {
     document.querySelector('.fundoRosa').classList.toggle('baladinha');
-    document.querySelector('.botaoBalada').classList.toggle('verde');
+    document.querySelector('.botaoBalada').classList.toggle('botaoExtraVerde');
 });
 
 // BOTÃO QUE REPRODUZ UMA MÚSICA
