@@ -1,89 +1,38 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <title>Jogo Genius</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='style.css'>
-    <link href='https://fonts.googleapis.com/css2?family=Press+Start+2P' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
-    <div class='fundoRosa'>
-        <div class="fundoInvisivel">
-            <img class='rick' src="rick.gif">
-            <img class='rick2' src="rick.gif">
+    <div class="fundoRosa">
+        <h1 id="nivel">Aperte ENTER para começar</h1>
+        <h1 id="cliqueAqui">OU CLIQUE AQUI </h1>
+        <div class="circuloPreto">
+            <div id="verde" class="botao verde">A</div>
+            <div id="vermelho" class="botao vermelho">S</div>
+            <div id="amarelo" class="botao amarelo">Z</div>
+            <div id="azul" class="botao azul">X</div>
+            <div class="circuloPretoMenor">GENIUS</div>
         </div>
-        <h1 id='nivel'>Aperte ENTER para começar</h1>
-        <h1 id='cliqueAqui'>OU CLIQUE AQUI </h1>
-        <div class='circuloPreto'>
-            <div id='verde' class='botao verde'>A</div>
-            <div id='vermelho' class='botao vermelho'>S</div>
-            <div id='amarelo' class='botao amarelo'>Z</div>
-            <div id='azul' class='botao azul'>X</div>
-            <div class='circuloPretoMenor'>GENIUS</div>
+
+        <!-- CONTEÚDO EXTRA -->
+        <div class="fundoExtra">
+            <img class="rick esquerdo" src="imagens/rick.gif">
+            <img class="rick direito" src="imagens/rick.gif">
+            <div class="botaoGirar">🔄</div>
+            <div class="botaoBalada">🎉</div>
+            <div id="botaoMusica" class="botaoMusica">▶️</div>
         </div>
-        <div class="botaoGirar">🔄</div>
-        <div class="botaoBalada">🎉</div>
-        <div id="botaoMusica" class="botaoMusica">▶️</div>
+        <!-- CONTEÚDO EXTRA -->
+
     </div>
-
-    <script src='jogo.js'></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class='fundoAmarelo'>AMARELO</div>
-    <div class='fundoVerde'>
-        <div class='fundoLaranja'>
-            <div class='fundoRoxo'>1</div>
-            <div class='fundoRoxo'>2</div>
-            <div class='fundoRoxo'>3</div>
-            <div class='fundoRoxo'>4</div>
-        </div>
-        <div class='fundoAzul'>AZUL</div>
-    </div>
-    <div class='fundoVermelho'>VERMELHO</div>
-    <div class='fundoVermelho'>VERMELHO</div>
-    <div class='fundoVermelho'>VERMELHO</div>
-    <div class='fundoVermelho'>VERMELHO</div>
-    <div class='fundoAmarelo'>AMARELO</div>
-    <div class='fundoVerde'>VERDE</div> -->
+    <script src="jogo.js"></script>
 </body>
 
 </html>
